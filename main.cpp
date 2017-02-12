@@ -191,20 +191,37 @@ int main() {
         switch(a) {
             case 0:
                 update(1, 0, n-1, x-1, y);
+//                cout << toString(items) << endl;
                 break;
             case 1:
                 //get even number in range
-                cout << query(1, 0, n-1, x, y).even << endl;
+                cout << query(1, 0, n-1, x-1, y-1).even << endl;
                 break;
             case 2:
                 //get odd numbers in range
-                cout << query(1, 0, n-1, x, y).odd << endl;
+                cout << query(1, 0, n-1, x-1, y-1).odd << endl;
                 break;
         }
     }
 
     return 0;
 }
+//10
+//2 2 2 2 2 2 2 2 2 2
+//10
+//1 1 5
+//5
+//2 1 5
+//0
+//0 2 3
+//1 1 5
+//4
+//2 1 5
+//1
+//0 1 5
+//1 1 10
+//8
+//2 1 9
 
 /**
  * Code for Lazy Update Commented away for now :)
